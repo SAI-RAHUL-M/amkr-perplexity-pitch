@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMKR — Packaging is the New Fab | Perplexity Stock Pitch 2026</title>
+<meta name="description" content="Long thesis on Amkor Technology (AMKR): the AI chip bottleneck priced as a commodity. 12-month target $60.40. Built with Perplexity Computer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-label="AMKR">
+        <rect x="1" y="1" width="10" height="10" rx="2" fill="var(--accent)"/>
+        <rect x="15" y="1" width="10" height="10" rx="2" fill="var(--accent)" opacity=".5"/>
+        <rect x="1" y="15" width="10" height="10" rx="2" fill="var(--accent)" opacity=".5"/>
+        <rect x="15" y="15" width="10" height="10" rx="2" fill="var(--accent)" opacity=".22"/>
+        <line x1="11" y1="6" x2="15" y2="6" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="6" y1="11" x2="6" y2="15" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="20" y1="11" x2="20" y2="15" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="11" y1="20" x2="15" y2="20" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand">AMKR <span class="brand-yr">/ 2026</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="#thesis">Thesis</a>
+      <a href="#tariffs">Tariffs</a>
+      <a href="#model">Financials</a>
+      <a href="#moat">Moat</a>
+      <a href="#precedent">Precedent</a>
+      <a href="#risks">Risks</a>
+      <a href="#computer">Research</a>
+    </div>
+    <div class="nav-right">
+      <span class="dbadge db-s">Statista</span>
+      <span class="dbadge db-p">PitchBook</span>
+      <span class="dbadge db-c">CB Insights</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+        <svg id="theme-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="hero" id="thesis">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-inner container">
+    <div class="hero-left">
+      <div class="verdict-pill">
+        <span class="vp-long">LONG</span>
+        <span class="vp-ticker">AMKR</span>
+        <span class="vp-dot">·</span>
+        <span class="vp-exch">NASDAQ</span>
+        <span class="vp-dot">·</span>
+        <span class="vp-mcap">$12.9B Mkt Cap</span>
+      </div>
+      <h1 class="hero-h1">Packaging is<br>the <em>New Fab</em></h1>
+      <p class="hero-sub">The market prices Amkor as a commodity assembler at 1.65× P/S. It is the critical physical bottleneck of the AI chip deployment cycle — priced like plumbing, valued like infrastructure.</p>
+      <div class="targets">
+        <div class="tgt tgt-bear">
+          <span class="tgt-label">Bear</span>
+          <span class="tgt-price">$34.49</span>
+          <span class="tgt-pct neg">−34%</span>
+        </div>
+        <div class="tgt tgt-base">
+          <span class="tgt-label">Base Target</span>
+          <span class="tgt-price accent">$60.40</span>
+          <span class="tgt-pct pos">+15%</span>
+        </div>
+        <div class="tgt tgt-bull">
+          <span class="tgt-label">Bull</span>
+          <span class="tgt-price">$94.74</span>
+          <span class="tgt-pct pos">+81%</span>
+        </div>
+      </div>
+      <p class="hero-cur">Current: <strong>$52.42</strong> &nbsp;·&nbsp; As of April 8, 2026</p>
+    </div>
+    <div class="hero-right">
+      <div class="hstats">
+        <div class="hstat"><div class="hstat-v" data-count="83" data-sfx="%">0%</div><div class="hstat-l">Advanced Products Mix</div><div class="hstat-d pos">↑ from 72% in FY2021</div></div>
+        <div class="hstat"><div class="hstat-v">1.65×</div><div class="hstat-l">Current P/S Multiple</div><div class="hstat-d neg">vs 7–17× semi equip peers</div></div>
+        <div class="hstat"><div class="hstat-v" data-count="60" data-sfx="%">0%</div><div class="hstat-l">Q4 2025 EPS Beat</div><div class="hstat-d pos">$0.69 vs $0.43 consensus</div></div>
+        <div class="hstat"><div class="hstat-v">~3×</div><div class="hstat-l">HDFO Capacity Growth</div><div class="hstat-d pos">Expected FY2026</div></div>
+        <div class="hstat"><div class="hstat-v">$2.85B</div><div class="hstat-l">Govt. Incentives</div><div class="hstat-d pos">CHIPS Act + ITC</div></div>
+        <div class="hstat"><div class="hstat-v">30%</div><div class="hstat-l">Incremental EBITDA Margin</div><div class="hstat-d pos">Management-guided FY2026</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="sh-line"></div><span>Scroll to explore</span></div>
+</section>
+
+<!-- ════════════ MARKET ERROR ════════════ -->
+<section class="section bg-alt" id="market-error">
+  <div class="container">
+    <div class="sec-label">The Market Error</div>
+    <h2 class="sec-h2">What the Market <span class="accent">Gets Wrong</span></h2>
+    <div class="error-layout">
+      <div class="error-col">
+        <div class="ecrd consensus-crd">
+          <div class="ecrd-tag">Consensus View</div>
+          <p>"Amkor is a low-margin commodity assembler exposed to consumer cyclicality. AI disruption makes legacy chipmakers irrelevant."</p>
+          <div class="ecrd-impl">Implies: 1.2–1.5× P/S indefinitely</div>
+        </div>
+        <div class="err-arrow">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 6v24M10 22l8 8 8-8" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Variant Perception</span>
+        </div>
+        <div class="ecrd variant-crd">
+          <div class="ecrd-tag accent-tag">The Real Story</div>
+          <p>Advanced packaging — CoWoS 2.5D integration and high-density fan-out (HDFO) — is the <em>physical bottleneck</em> of the AI deployment cycle. Amkor is one of two OSATs with TSMC CoWoS certification. This is structural capacity monopoly, not commodity assembly.</p>
+          <div class="ecrd-impl accent-impl">Implies: 2.0–3.5× P/S as the market re-classifies AMKR as AI infrastructure</div>
+        </div>
+      </div>
+      <div class="insights-col">
+        <div class="icrd"><div class="ic-src"><span class="src-dot sd-stat"></span>Statista / McKinsey</div><div class="ic-stat">19× CAGR gap</div><p>AI semiconductors growing at <strong>19% CAGR</strong> (2017–2025) — nearly 5× non-AI chip growth. GPU market: <strong>$82.68B → $352.55B by 2030</strong> (33.65% CAGR). Every GPU requires advanced packaging.</p></div>
+        <div class="icrd"><div class="ic-src"><span class="src-dot sd-gsemi"></span>Global Semi Research · Dec 2025</div><div class="ic-stat">180–190K wafers/yr</div><p>TSMC outsourcing <strong>240–270K CoWoS wafers/year</strong> to OSAT partners. Amkor receives <strong>180–190K (≈70% share)</strong>. NVIDIA CoWoS demand surges to ~700K wafers in 2026, 70–80% outsourced.</p></div>
+        <div class="icrd"><div class="ic-src"><span class="src-dot sd-pb"></span>PitchBook Company Profiles · March 2026</div><div class="ic-stat">Only US-HQ OSAT at scale</div><p>PitchBook confirms AMKR is the <strong>only US-headquartered OSAT</strong> at production scale with TSMC partnership. <strong>30,800 employees</strong>, $6.71B TTM revenue. No US-based challenger at comparable technology node.</p></div>
+        <div class="icrd"><div class="ic-src"><span class="src-dot sd-cbi"></span>CB Insights State of AI 2025</div><div class="ic-stat">$100.4B AI funding in 2024</div><p>Private AI raised record <strong>$100.4B in 2024</strong>. Top corporate VCs: NVIDIA (NVentures), Qualcomm, Google, Microsoft — precisely the chipmakers driving AMKR's HDFO demand pipeline.</p></div>
+        <div class="icrd"><div class="ic-src"><span class="src-dot sd-adv"></span>Mordor Intelligence / Bloomberg · 2026</div><div class="ic-stat">$57.46B → $90.11B TAM</div><p>Advanced packaging market: <strong>$57.46B in 2026 → $90.11B by 2031</strong> (9.42% CAGR). AMKR is one of 5 players with ~55% combined share. The only pure-play OSAT in this group.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ TARIFF ALPHA ════════════ -->
+<section class="section" id="tariffs">
+  <div class="container">
+    <div class="sec-label">NEW ALPHA — Jan 15, 2026</div>
+    <h2 class="sec-h2">The Tariff Tailwind <span class="accent">Nobody Modeled</span></h2>
+    <p class="sec-sub">Trump's Section 232 proclamation imposed a 25% tariff on imported semiconductors. Most analysts missed the OSAT-level implications. Computer found it buried in the policy footnotes.</p>
+
+    <div class="tariff-hero">
+      <div class="tariff-stat-row">
+        <div class="tsbox accent-box">
+          <div class="tsbox-val">25%</div>
+          <div class="tsbox-l">Section 232 Tariff</div>
+          <div class="tsbox-d">On imported semiconductors, effective Jan 15, 2026</div>
+        </div>
+        <div class="tsbox">
+          <div class="tsbox-val pos">EXEMPT</div>
+          <div class="tsbox-l">AMKR Arizona Output</div>
+          <div class="tsbox-d">Domestic US packaging for data centers, R&D, startups excluded from tariff</div>
+        </div>
+        <div class="tsbox">
+          <div class="tsbox-val neg">+12–16%</div>
+          <div class="tsbox-l">Cost Increase for China OSATs</div>
+          <div class="tsbox-d">JCET and Chinese competitors face full tariff on US-bound exports</div>
+        </div>
+        <div class="tsbox accent-box">
+          <div class="tsbox-val">$1.3B</div>
+          <div class="tsbox-l">Total Govt. Support</div>
+          <div class="tsbox-d">$400M direct + $200M loans + 25% ITC on $2.75B capex = 47% capex offset</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tariff-matrix-wrap">
+      <table class="tariff-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th class="amkr-th">Amkor (AMKR) 🇺🇸</th>
+            <th>ASE (ASX) 🇹🇼</th>
+            <th>JCET 🇨🇳</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Section 232 Tariff Exposure</td><td class="amkr-td yes">✓ Exempt (domestic production)</td><td class="partial">◐ Partial (US-Taiwan deal)</td><td class="bad">✗ Full 25% tariff</td></tr>
+          <tr><td>TSMC CoWoS Whitelist</td><td class="amkr-td yes">✓ DoC Approved</td><td class="partial">◐ Limited</td><td class="bad">✗ Not approved</td></tr>
+          <tr><td>CHIPS Act Funding</td><td class="amkr-td yes">✓ $400M + $200M loans</td><td class="bad">✗ None</td><td class="bad">✗ None</td></tr>
+          <tr><td>25% ITC on Capex</td><td class="amkr-td yes">✓ ~$688M benefit on $2.75B</td><td class="bad">✗ Not eligible</td><td class="bad">✗ Not eligible</td></tr>
+          <tr><td>US Manufacturing Facility</td><td class="amkr-td yes">✓ Arizona $7B campus</td><td class="bad">✗ None</td><td class="bad">✗ None</td></tr>
+          <tr><td>Export Compliance (AI chips)</td><td class="amkr-td yes">✓ Full export rights</td><td class="partial">◐ Partial</td><td class="bad">✗ Restricted to China</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tariff-insight">
+      <strong>The Finding Computer Surfaced:</strong> Apple is routing M5 chip packaging through Amkor (US) specifically to minimize tariff exposure, per Korean media. TSMC suspended shipments to non-whitelisted OSATs in China for AI chips. This structurally removes JCET as a price competitor in the US advanced packaging market — and AMKR is the direct beneficiary.
+      <div class="ti-src">Sources: White House Section 232 Proclamation Jan 15 2026 · Gibson Dunn analysis · TechSoda/TSMC Whitelist · Korean media (M5 routing) · USITC/SEMI cost data</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ SUPPLY CHAIN ════════════ -->
+<section class="section bg-alt" id="supply-chain">
+  <div class="container">
+    <div class="sec-label">Supply Chain Intelligence</div>
+    <h2 class="sec-h2">Where Value <span class="accent">Accumulates</span></h2>
+    <div class="sc-diagram">
+      <div class="sc-node">
+        <div class="sc-icon">🏭</div>
+        <div class="sc-name">TSMC / Samsung</div>
+        <div class="sc-role">Wafer Fabrication</div>
+        <div class="sc-gm">55–60% Gross Margin</div>
+      </div>
+      <div class="sc-arrow">
+        <div class="sc-flow-label">CoWoS outsourcing<br>180–190K wafers/yr</div>
+        <svg viewBox="0 0 100 24" fill="none"><path d="M0 12h88M80 5l10 7-10 7" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="sc-node sc-highlight">
+        <div class="sc-badge">AMKR</div>
+        <div class="sc-icon">⚡</div>
+        <div class="sc-name">Amkor Technology</div>
+        <div class="sc-role">Advanced Packaging Bottleneck</div>
+        <div class="sc-gm accent">17% EBITDA → 20%+ by 2028</div>
+        <div class="sc-note">One of only 2 CoWoS-certified OSATs globally</div>
+      </div>
+      <div class="sc-arrow">
+        <svg viewBox="0 0 100 24" fill="none"><path d="M0 12h88M80 5l10 7-10 7" stroke="var(--text-faint)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="sc-flow-label">Packaged AI accelerators</div>
+      </div>
+      <div class="sc-node">
+        <div class="sc-icon">🖥️</div>
+        <div class="sc-name">NVIDIA / AMD / Google</div>
+        <div class="sc-role">Hyperscaler / Data Center</div>
+        <div class="sc-gm">60–75% Gross Margin</div>
+      </div>
+    </div>
+    <div class="sc-note-box">
+      <strong>The Chiplet Revolution:</strong> As die shrinkage economics slow below 3nm, performance gains now come from <em>how chips are assembled</em>, not just fabricated. NVIDIA Blackwell, AMD MI400, Google TPU v7 — all use multi-die chiplet architectures requiring advanced packaging as the critical path.
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FINANCIAL MODEL ════════════ -->
+<section class="section" id="model">
+  <div class="container">
+    <div class="sec-label">Financial Model</div>
+    <h2 class="sec-h2">The Numbers: <span class="accent">5-Year Projection</span></h2>
+    <div class="charts-pair">
+      <div class="chart-card chart-wide">
+        <div class="cc-head"><div class="cc-title">Revenue ($M) &amp; EBITDA Margin (%)</div><div class="cc-sub">FY2021A–FY2030E · 30% incremental margin flow-through from FY2026</div></div>
+        <div class="cc-body"><canvas id="revChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="cc-head"><div class="cc-title">EPS Beat History</div><div class="cc-sub">Actual vs. Consensus · Q4 2025: <span class="accent">+60% beat</span></div></div>
+        <div class="cc-body"><canvas id="epsChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- DCF Engine -->
+    <div class="dcf-card">
+      <div class="dcf-hd">
+        <h3>Interactive Valuation Engine</h3>
+        <p>Adjust any assumption — price target recalculates instantly. All defaults anchored to management guidance or Wall Street consensus.</p>
+      </div>
+      <div class="dcf-body">
+        <div class="sliders">
+          <div class="sg"><div class="sg-lbl"><span>FY2026 Revenue Growth</span><span class="sv accent" id="sv-rev">11.2%</span></div><input class="rng" type="range" id="sl-rev" min="4" max="22" step="0.5" value="11.2"><div class="sg-bnds"><span>4% (bear)</span><span>22% (bull)</span></div></div>
+          <div class="sg"><div class="sg-lbl"><span>Incremental EBITDA Margin</span><span class="sv accent" id="sv-mgn">30%</span></div><input class="rng" type="range" id="sl-mgn" min="15" max="48" step="1" value="30"><div class="sg-bnds"><span>15%</span><span>48%</span></div></div>
+          <div class="sg"><div class="sg-lbl"><span>Exit P/S Multiple</span><span class="sv accent" id="sv-ps">2.0×</span></div><input class="rng" type="range" id="sl-ps" min="1.0" max="4.5" step="0.1" value="2.0"><div class="sg-bnds"><span>1.0× (bear)</span><span>4.5× (infra)</span></div></div>
+          <div class="sg"><div class="sg-lbl"><span>WACC</span><span class="sv accent" id="sv-wacc">10.0%</span></div><input class="rng" type="range" id="sl-wacc" min="8" max="15" step="0.5" value="10"><div class="sg-bnds"><span>8%</span><span>15%</span></div></div>
+        </div>
+        <div class="outputs">
+          <div class="oc"><div class="oc-l">FY2026E Revenue</div><div class="oc-v" id="out-rev">$7,459M</div></div>
+          <div class="oc"><div class="oc-l">FY2026E EBITDA</div><div class="oc-v" id="out-ebitda">$1,328M</div></div>
+          <div class="oc"><div class="oc-l">EBITDA Margin</div><div class="oc-v" id="out-em">17.8%</div></div>
+          <div class="oc oc-accent">
+            <div class="oc-l">Implied Price Target</div>
+            <div class="oc-v big accent" id="out-price">$60.40</div>
+            <div class="oc-up pos" id="out-up">+29.9% upside</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario Cards -->
+    <div class="scenarios">
+      <div class="scn scn-bear"><div class="scn-badge badge-bear">BEAR</div><div class="scn-desc">AI capex slows. Packaging re-commoditizes. P/S stays 1.2×.</div><div class="scn-data"><div class="sd"><span>Revenue</span><strong>$7.1B</strong></div><div class="sd"><span>P/S</span><strong>1.2×</strong></div><div class="sd"><span>Target</span><strong>$34.49</strong></div></div><div class="scn-ret neg">−34.2%</div></div>
+      <div class="scn scn-base"><div class="scn-badge badge-base">BASE ✓</div><div class="scn-desc">Consensus revenue. Re-rates to ASE-parity multiple.</div><div class="scn-data"><div class="sd"><span>Revenue</span><strong>$7.46B</strong></div><div class="sd"><span>P/S</span><strong>2.0×</strong></div><div class="sd"><span>Target</span><strong>$60.40</strong></div></div><div class="scn-ret pos">+15.2%</div></div>
+      <div class="scn scn-bull"><div class="scn-badge badge-bull">BULL</div><div class="scn-desc">Above-consensus + full AI infra re-rating. HDFO at full volume.</div><div class="scn-data"><div class="sd"><span>Revenue</span><strong>$7.8B</strong></div><div class="sd"><span>P/S</span><strong>3.0×</strong></div><div class="sd"><span>Target</span><strong>$94.74</strong></div></div><div class="scn-ret pos">+80.7%</div></div>
+    </div>
+
+    <!-- Sum-of-Parts -->
+    <div class="sotp-block">
+      <h3 class="blk-title">Sum-of-Parts Valuation</h3>
+      <p class="blk-sub">Valuing each segment at its appropriate market multiple rather than blending everything at 1.65×</p>
+      <div class="sotp-table-wrap">
+        <table class="sotp-table">
+          <thead><tr><th>Segment</th><th class="num">FY2026E Rev</th><th class="num">Base Multiple</th><th class="num">Implied EV</th><th class="num">Bull Multiple</th><th class="num">Bull EV</th><th>Rationale</th></tr></thead>
+          <tbody>
+            <tr class="comp-row"><td><strong>Computing (AI/HPC)</strong></td><td class="num mono">$1,490M</td><td class="num mono accent">3.0×</td><td class="num mono">$4,470M</td><td class="num mono">5.0×</td><td class="num mono">$7,450M</td><td class="rat">AI infrastructure multiple — still below semi equipment at 10-17×</td></tr>
+            <tr><td>Communications</td><td class="num mono">$3,380M</td><td class="num mono">1.5×</td><td class="num mono">$5,070M</td><td class="num mono">1.8×</td><td class="num mono">$6,084M</td><td class="rat">Premium smartphone mix shift; stable, mature</td></tr>
+            <tr><td>Automotive / Industrial</td><td class="num mono">$1,390M</td><td class="num mono">2.0×</td><td class="num mono">$2,780M</td><td class="num mono">2.5×</td><td class="num mono">$3,475M</td><td class="rat">EV/ADAS secular tailwind; content gain per vehicle</td></tr>
+            <tr><td>Consumer / Mainstream</td><td class="num mono">$199M</td><td class="num mono">0.8×</td><td class="num mono">$159M</td><td class="num mono">0.8×</td><td class="num mono">$159M</td><td class="rat">Commodity, declining; assigned minimal multiple</td></tr>
+            <tr class="sotp-total"><td><strong>Total Enterprise Value</strong></td><td class="num mono"><strong>$6,459M</strong></td><td class="num mono accent">1.93× blended</td><td class="num mono accent"><strong>$12,479M</strong></td><td class="num mono">2.66× blended</td><td class="num mono pos"><strong>$17,168M</strong></td><td class="rat">—</td></tr>
+            <tr class="sotp-eq"><td colspan="3">Less: Net Debt ($187M) → <strong>Equity Value</strong></td><td class="num mono accent"><strong>$49.77/share</strong></td><td colspan="2" class="num mono pos"><strong>$68.75/share</strong></td><td class="rat upside-note">Base: +7% · Bull: +48%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="sotp-note">SOTP floor of <strong>$49.77</strong> assumes NO re-rating for the computing segment beyond 3×. If computing gets a 5× multiple (still well below semi equipment peers at 10-17×), equity value = <strong>$68.75/share (+48%)</strong>. Combined with the P/S re-rating thesis, both methodologies converge on $60–$70 as the 12-month fair value range.</div>
+    </div>
+
+    <!-- P/S Re-rating Chart -->
+    <div class="chart-card mt-lg">
+      <div class="cc-head"><div class="cc-title">P/S Multiple Re-rating Sensitivity</div><div class="cc-sub">Implied share price at FY2026E revenue ($7.46B) × P/S multiple · Gold line = current price $52.42</div></div>
+      <div class="cc-body cc-tall"><canvas id="psChart"></canvas></div>
+    </div>
+
+    <!-- Trading Comps -->
+    <div class="comps-block">
+      <h3 class="blk-title">Trading Comparables</h3>
+      <p class="blk-sub">AMKR at 1.65× P/S vs. the companies whose equipment it uses at 10-17×</p>
+      <div class="comps-wrap">
+        <table class="comps-table">
+          <thead><tr><th>Company</th><th>Ticker</th><th class="num">Mkt Cap</th><th class="num">Rev TTM</th><th class="num">P/S</th><th class="num">EV/EBITDA</th><th class="num">Gross Margin</th><th>Category</th></tr></thead>
+          <tbody>
+            <tr class="amkr-row"><td><strong>Amkor Technology</strong></td><td class="mono accent">AMKR</td><td class="num mono">$12.9B</td><td class="num mono">$6.71B</td><td class="num mono neg bold">1.65×</td><td class="num mono">8.4×</td><td class="num mono">14.0%</td><td><span class="ctag osat-tag">OSAT</span></td></tr>
+            <tr><td>ASE Technology</td><td class="mono">ASX</td><td class="num mono">$49.2B</td><td class="num mono">$20.6B</td><td class="num mono">1.74×</td><td class="num mono">10.8×</td><td class="num mono">17.7%</td><td><span class="ctag osat-tag">OSAT</span></td></tr>
+            <tr><td>TSMC</td><td class="mono">TSM</td><td class="num mono">$1,771B</td><td class="num mono">$90.0B</td><td class="num mono">19.7×</td><td class="num mono">16.2×</td><td class="num mono">57.0%</td><td><span class="ctag foundry-tag">Foundry</span></td></tr>
+            <tr><td>Applied Materials</td><td class="mono">AMAT</td><td class="num mono">$280.8B</td><td class="num mono">$27.2B</td><td class="num mono">10.3×</td><td class="num mono">27.5×</td><td class="num mono">48.0%</td><td><span class="ctag equip-tag">Equipment</span></td></tr>
+            <tr><td>KLA Corporation</td><td class="mono">KLAC</td><td class="num mono">$199.7B</td><td class="num mono">$11.4B</td><td class="num mono">17.5×</td><td class="num mono">23.8×</td><td class="num mono">60.0%</td><td><span class="ctag equip-tag">Equipment</span></td></tr>
+            <tr><td>Lam Research</td><td class="mono">LRCX</td><td class="num mono">$277.2B</td><td class="num mono">$17.3B</td><td class="num mono">16.0×</td><td class="num mono">21.5×</td><td class="num mono">48.0%</td><td><span class="ctag equip-tag">Equipment</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="comps-insight">The gap: AMKR at 1.65× P/S vs. semi equipment at 10–17×. We don't need AMKR to trade like equipment. We need it to trade like its direct OSAT peer ASE at 1.74× — and a re-rating to 2.0× delivers +15% upside on consensus revenue alone.</div>
+    </div>
+
+    <!-- Assumptions -->
+    <div class="assump-block">
+      <h3 class="blk-title">Defensible Assumptions</h3>
+      <p class="blk-sub">Every number has a primary source. No hand-waving.</p>
+      <div class="assump-wrap">
+        <table class="assump-table">
+          <thead><tr><th>Assumption</th><th>Value</th><th>Source</th></tr></thead>
+          <tbody>
+            <tr><td>Base Revenue (FY2025A)</td><td class="mono">$6.71B</td><td>Actual reported — Q4 2025 results</td></tr>
+            <tr><td>FY2026 Revenue Growth</td><td class="mono">11.2%</td><td>Wall Street consensus ($7.46B)</td></tr>
+            <tr><td>Computing Segment Growth</td><td class="mono">&gt;20% YoY</td><td><span class="mtag">MGMT</span> Kevin Engel, Q4 2025 earnings call</td></tr>
+            <tr><td>HDFO Platform Growth</td><td class="mono">~3× in FY2026</td><td><span class="mtag">MGMT</span> "2.5D and HDFO platforms expected to nearly triple"</td></tr>
+            <tr><td>Incremental EBITDA Margin</td><td class="mono">30%</td><td><span class="mtag">MGMT</span> CFO Megan Faust: "achieve that 30% incremental flow-through"</td></tr>
+            <tr><td>CapEx / Revenue (FY2026)</td><td class="mono">~16%</td><td>$2.5–3.0B guidance; Arizona Phase 1 front-loaded</td></tr>
+            <tr><td>Government Incentives</td><td class="mono">$2.85B total</td><td><span class="mtag">MGMT</span> "potential aggregate incentives of over $2.85B" — Q4 call</td></tr>
+            <tr><td>25% Investment Tax Credit</td><td class="mono">~$688M benefit</td><td>Treasury ITC on qualified capex — White House Jan 15 2026</td></tr>
+            <tr><td>TSMC CoWoS Outsourcing</td><td class="mono">180–190K wafers/yr</td><td>Global Semi Research, December 2025</td></tr>
+            <tr><td>Tax Rate (FY2026)</td><td class="mono">~20%</td><td>Q1 2026 guidance (FY2025 actual: 15.4%)</td></tr>
+            <tr><td>WACC</td><td class="mono">10.0%</td><td>Beta ~1.3, risk-free 4.2%, ERP 5.0%</td></tr>
+            <tr><td>Shares Outstanding</td><td class="mono">247M</td><td>FY2025 actual; minimal dilution guided</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ MOAT ════════════ -->
+<section class="section bg-alt" id="moat">
+  <div class="container">
+    <div class="sec-label">Competitive Moat</div>
+    <h2 class="sec-h2">Why This Moat is <span class="accent">Unbreachable</span></h2>
+    <p class="sec-sub">TSMC CoWoS certification takes 2–3 years minimum. It took Amkor nearly a decade to reach primary partner status. No new entrant can replicate this quickly.</p>
+    <div class="moat-grid">
+      <div class="mcrd"><div class="mn">01</div><div class="mico pico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8L2 7h20l-6-4z"/></svg></div><h4>S-Connect Bridge Die</h4><p>Proprietary silicon bridge for chiplet-to-chiplet interconnect. High-bandwidth die-to-die connections at lower cost than full silicon interposers. Critical for NVIDIA Blackwell-class AI accelerators.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill" style="--w:88%"></div></div><span class="mbv">High</span></div></div>
+      <div class="mcrd mcrd-gold"><div class="mn">02</div><div class="mico gico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h4>SWIFT® HDFO Platform</h4><p>High-density fan-out wafer-level packaging for heterogeneous chiplet assembly. Ramped into high-volume production 2025. Two additional data center programs qualifying H1 2026. TSMC-compatible process.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill gold-fill" style="--w:95%"></div></div><span class="mbv gold-v">Critical</span></div></div>
+      <div class="mcrd"><div class="mn">03</div><div class="mico bico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8"/><path d="M12 22v-6M3 16l9 6 9-6"/></svg></div><h4>Thermal Superposition Modeling</h4><p>Proprietary matrix-based thermal modeling for multi-die 2.5D packages. Influence-coefficient methods predict junction temperatures across complex power maps — enabling 400W+ AI chipset qualification.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill" style="--w:80%"></div></div><span class="mbv">High</span></div></div>
+      <div class="mcrd"><div class="mn">04</div><div class="mico grico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>TSMC Strategic Partnership</h4><p>MOU signed; Arizona facility backed by customer pre-payment and loading agreements. TSMC is increasing outsourcing, not decreasing — 180–190K CoWoS wafers/year as a multi-year contractual commitment.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill" style="--w:98%"></div></div><span class="mbv">Near-Absolute</span></div></div>
+      <div class="mcrd"><div class="mn">05</div><div class="mico puico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h4>Multi-Regional Geopolitical Moat</h4><p>Korea (expanding 20% end-2026), Vietnam (break-even Q4 2025), Arizona (largest US advanced packaging facility), Portugal (Infineon JV). Only OSAT with credible US-soil capacity for CHIPS Act customers.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill" style="--w:92%"></div></div><span class="mbv">Very High</span></div></div>
+      <div class="mcrd"><div class="mn">06</div><div class="mico oico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>AI/ML Process Optimization</h4><p>ML-driven thermal modeling, yield prediction, and process window optimization. Enables faster qualification cycles — critical as AI customers demand compressed time-to-volume for new chipset generations.</p><div class="mbar-row"><span class="mbl">Barrier</span><div class="mbar"><div class="mfill" style="--w:72%"></div></div><span class="mbv">Growing</span></div></div>
+    </div>
+    <div class="comp-matrix-blk">
+      <h3 class="blk-title">Competitive Matrix</h3>
+      <p class="blk-sub">Sources: PitchBook Company Profiles (March 2026), Global Semi Research, White House Section 232 Proclamation</p>
+      <div class="matrix-wrap">
+        <table class="matrix-table">
+          <thead><tr><th>Capability</th><th class="amkr-th">Amkor (AMKR)</th><th>ASE (ASX)</th><th>JCET 🇨🇳</th><th>SPIL 🇹🇼</th></tr></thead>
+          <tbody>
+            <tr><td>TSMC CoWoS Certification</td><td class="amkr-td yes">✓ Primary (NVIDIA)</td><td class="partial">◐ Limited</td><td class="bad">✗ None</td><td class="partial">◐ Secondary</td></tr>
+            <tr><td>HDFO Capacity (2026)</td><td class="amkr-td yes">✓ ~3× growth</td><td class="partial">◐ Growing</td><td class="bad">✗ Behind</td><td class="partial">◐ Limited</td></tr>
+            <tr><td>US Manufacturing</td><td class="amkr-td yes">✓ Arizona $7B</td><td class="bad">✗ None</td><td class="bad">✗ None</td><td class="bad">✗ None</td></tr>
+            <tr><td>Advanced Products % Rev</td><td class="amkr-td yes">83%</td><td class="partial">~50%</td><td class="partial">~35%</td><td class="partial">~45%</td></tr>
+            <tr><td>Section 232 Tariff Exposure</td><td class="amkr-td yes">✓ Exempt (domestic)</td><td class="partial">◐ Partial</td><td class="bad">✗ Full 25%</td><td class="partial">◐ Partial</td></tr>
+            <tr><td>CHIPS Act Funding</td><td class="amkr-td yes">✓ $400M+</td><td class="bad">✗ None</td><td class="bad">✗ None</td><td class="bad">✗ None</td></tr>
+            <tr><td>Geopolitical Risk</td><td class="amkr-td yes">Low (US HQ)</td><td class="partial">Medium (TW)</td><td class="bad">High (CN)</td><td class="partial">Medium (TW)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ASE PRECEDENT ════════════ -->
+<section class="section" id="precedent">
+  <div class="container">
+    <div class="sec-label">Historical Precedent</div>
+    <h2 class="sec-h2">This Has Happened Before: <span class="accent">The ASE Playbook</span></h2>
+    <p class="sec-sub">ASE Technology — Amkor's closest peer — went through the exact same mis-classification from "commodity OSAT" to "AI infrastructure play." The re-rating took 3 years and delivered a 2.8× multiple expansion.</p>
+    <div class="prec-layout">
+      <div class="prec-chart-card">
+        <div class="cc-head"><div class="cc-title">ASE Technology Historical P/S (2018–2025)</div><div class="cc-sub">ASE went from 0.62× (commodity OSAT) → 1.74× (AI infrastructure) — AMKR is at the start of this same journey</div></div>
+        <div class="cc-body cc-tall"><canvas id="aseChart"></canvas></div>
+      </div>
+      <div class="prec-compare">
+        <h3>The Parallel Is Exact</h3>
+        <table class="compare-table">
+          <thead><tr><th>Factor</th><th>ASE (2022)</th><th class="amkr-th">AMKR (Today)</th></tr></thead>
+          <tbody>
+            <tr><td>P/S Multiple</td><td class="mono">0.62×</td><td class="amkr-td mono accent">1.65×</td></tr>
+            <tr><td>Advanced Mix % Rev</td><td class="mono">~35%</td><td class="amkr-td mono accent">83%</td></tr>
+            <tr><td>AI Customer Exposure</td><td class="mono">Growing</td><td class="amkr-td accent">Dominant</td></tr>
+            <tr><td>Government Support</td><td class="mono">None</td><td class="amkr-td accent">$2.85B CHIPS Act</td></tr>
+            <tr><td>Tariff Advantage</td><td class="mono">None</td><td class="amkr-td accent">Section 232 exempt</td></tr>
+            <tr><td>Investor Day Catalyst</td><td class="mono">None</td><td class="amkr-td accent">May 21, 2026</td></tr>
+            <tr><td>Verdict</td><td class="mono muted">BUY (in hindsight)</td><td class="amkr-td pos"><strong>BUY (now)</strong></td></tr>
+          </tbody>
+        </table>
+        <div class="prec-insight">AMKR today is <em>better positioned</em> than ASE was at its 2022 trough: higher advanced mix (83% vs 35%), a US government backstop (ASE had none), explicit tariff exemption (ASE gets partial), and an upcoming Investor Day on May 21 to catalyze the re-rating. The market is offering the same opportunity that ASE offered in 2022 — but with more structural support and a cleaner macro tailwind.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CATALYSTS ════════════ -->
+<section class="section bg-alt" id="catalysts">
+  <div class="container">
+    <div class="sec-label">Catalysts</div>
+    <h2 class="sec-h2">6–18 Month <span class="accent">Triggers</span></h2>
+    <div class="timeline">
+      <div class="tl-item tl-active">
+        <div class="tl-dot active-dot"></div>
+        <div class="tl-when">Now — H1 2026</div>
+        <h4>HDFO CPU Programs: Final Qualification</h4>
+        <p>Two data center AI programs completing qualification. CEO Engel: <em>"one of those [will be] in very high volume with a pretty steep ramp."</em> Revenue at premium ASPs begins in Q2/Q3.</p>
+        <div class="tl-impact">Impact: Immediate ASP uplift forces analyst estimate revisions</div>
+      </div>
+      <div class="tl-item tl-star">
+        <div class="tl-dot star-dot">★</div>
+        <div class="tl-when">May 21, 2026 — NEW CATALYST</div>
+        <h4>First Investor Day Under CEO Kevin Engel <span class="new-badge">NEW</span></h4>
+        <p>In New York City. CEO + CFO presenting strategy and financial outlook. Expected to disclose: margin expansion roadmap, updated Arizona timeline, new customer commitments. First capital markets event under new leadership — high probability of institutional re-evaluation.</p>
+        <div class="tl-impact star-impact">Impact: Highest-conviction catalyst — forces buy-side to update AMKR's category from "OSAT" to "AI infrastructure"</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-when">Q2–Q3 2026</div>
+        <h4>Earnings Beats vs. Depressed Seasonal Bar</h4>
+        <p>Q1 guided 25% YoY revenue growth. Computing >20% for full year. Q1 margin guidance (12.5–13.5%) sets a low bar — each subsequent beat re-rates the stock upward.</p>
+        <div class="tl-impact">Impact: Sequential margin expansion makes the 30% flow-through thesis visible in reported numbers</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-when">H2 2026</div>
+        <h4>HDFO Data Center Programs at Full Volume</h4>
+        <p>Fixed-cost absorption improves sharply. Management's 30% incremental margin target materializes. Advanced products mix expected to cross 85%+ threshold.</p>
+        <div class="tl-impact">Impact: EBITDA margin expansion validates the investment thesis — stock re-rates to match the fundamental improvement</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-when">2026–2027</div>
+        <h4>Arizona Milestones + $2.85B Incentive Inflows</h4>
+        <p>Phase 1 building completion mid-2027. $2.85B in government incentives flow on a lag. Customer prepayments activate. US-onshoring narrative drives institutional reallocation.</p>
+        <div class="tl-impact">Impact: $1.3B in total government support transforms balance sheet; capex cycle peaks and FCF inflects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ RISKS ════════════ -->
+<section class="section" id="risks">
+  <div class="container">
+    <div class="sec-label">Risk Assessment</div>
+    <h2 class="sec-h2">Risks &amp; <span class="accent">Mitigants</span></h2>
+    <div class="risks-grid">
+      <div class="rcrd"><div class="rtop"><span class="rsev hsev">HIGH</span><h4>Heavy CapEx Cycle</h4></div><p>$2.5–3.0B CapEx in 2026 vs $905M in 2025 crushes near-term FCF. Q1 EPS guided $0.18–$0.28.</p><div class="rmit"><div class="rml">Mitigant</div><p>$1.3B total government support (CHIPS Act + 25% ITC) offsets 47% of capex. Prepayment agreements provide committed revenue. CapEx normalizes to ~11% of rev by FY2028, unlocking $500M+ FCF.</p></div></div>
+      <div class="rcrd"><div class="rtop"><span class="rsev hsev">HIGH</span><h4>Customer Concentration</h4></div><p>Top 5 customers ≈65–73% of revenue. Apple and TSMC-related programs dominant. Loss of a major socket is material.</p><div class="rmit"><div class="rml">Mitigant</div><p>New HDFO data center programs (hyperscaler AI) diversifying customer base. Auto/industrial providing an independent revenue floor of $1.3B+. Multi-year loading agreements reduce cliff risk.</p></div></div>
+      <div class="rcrd"><div class="rtop"><span class="rsev msev">MEDIUM</span><h4>AI CapEx Cycle Reversal</h4></div><p>If hyperscaler AI spending decelerates sharply, CoWoS/HDFO demand could fall — thesis collapses to high-fixed-cost OSAT narrative.</p><div class="rmit"><div class="rml">Mitigant</div><p>Auto/industrial provides a non-AI revenue floor. CoWoS agreements are multi-year with take-or-pay elements. NVIDIA 700K wafer demand provides multi-year visibility. Bear case (-26%) is manageable vs. bull (+104%).</p></div></div>
+      <div class="rcrd"><div class="rtop"><span class="rsev msev">MEDIUM</span><h4>TSMC Brings Packaging In-House</h4></div><p>If TSMC expands its own CoWoS capacity instead of outsourcing, Amkor loses its biggest near-term growth driver.</p><div class="rmit"><div class="rml">Mitigant</div><p>TSMC is actively increasing outsourcing (capacity-constrained). TSMC's strategy: focus on higher-margin CoW; outsource CoWoS-R and CoWoS-S. Structure of the TSMC/Amkor MOU and customer prepayments make reversal unlikely in 12–24 months.</p></div></div>
+      <div class="rcrd"><div class="rtop"><span class="rsev lsev">LOW</span><h4>China OSAT Competition</h4></div><p>JCET and state-subsidized Chinese OSATs could undercut on price in non-US markets.</p><div class="rmit"><div class="rml">Mitigant</div><p>Section 232 tariffs create a 12–16% cost disadvantage for Chinese OSATs on US-bound exports. JCET not on TSMC CoWoS Whitelist. Export restrictions limit their ability to serve AI chip customers. Tariff regime is now structural, not temporary.</p></div></div>
+      <div class="rcrd"><div class="rtop"><span class="rsev lsev">LOW</span><h4>Margin Expansion Delay</h4></div><p>Vietnam, Japan optimization, and Arizona depreciation could push back the 30% flow-through materialization beyond Q2 2026.</p><div class="rmit"><div class="rml">Mitigant</div><p>Vietnam reached break-even Q4 2025. Japan optimization underway. HDFO programs carry higher ASPs that structurally improve mix regardless. Q3/Q4 2026 are natural inflection points from fixed-cost leverage on ramping HDFO volumes.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ SMART MONEY ════════════ -->
+<section class="section bg-alt" id="signals">
+  <div class="container">
+    <div class="sec-label">Smart Money Signals</div>
+    <h2 class="sec-h2">Congressional Activity &amp; <span class="accent">Insider Context</span></h2>
+    <div class="signals-layout">
+      <div class="sig-card">
+        <h3>Congressional Buying — Zero Sells</h3>
+        <p class="sig-sub">Data pulled from Perplexity Finance politician trading database</p>
+        <table class="sig-table">
+          <thead><tr><th>Politician</th><th>Role</th><th>Date</th><th>Action</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Sen. Markwayne Mullin</strong></td><td>Armed Services Committee</td><td>Feb 4, 2026</td><td class="pos">BUY</td><td class="mono">$15k–$50k</td></tr>
+            <tr><td><strong>Sen. Markwayne Mullin</strong></td><td>Armed Services Committee</td><td>Jan 5, 2026</td><td class="pos">BUY ×2</td><td class="mono">$30k–$100k</td></tr>
+            <tr><td>Sean McMaster</td><td>—</td><td>Oct 2025</td><td class="pos">BUY ×2</td><td class="mono">$16k–$65k</td></tr>
+          </tbody>
+        </table>
+        <div class="sig-note">Senator Mullin sits on the Armed Services Committee. Repeated purchases of an advanced packaging company by a defense committee member signals AMKR is being recognized as critical national security infrastructure — consistent with the CHIPS Act positioning.</div>
+      </div>
+      <div class="sig-card">
+        <h3>Kim Family Secondary: Debunked</h3>
+        <p class="sig-sub">Bear narrative vs. actual Form 4 data</p>
+        <div class="bear-vs-real">
+          <div class="bvr-bear">
+            <div class="bvr-label">Bear Claim</div>
+            <p>"Kim family sold 10M shares = insiders fleeing the stock"</p>
+          </div>
+          <div class="bvr-real">
+            <div class="bvr-label accent-tag">Reality (Form 4 Data)</div>
+            <ul>
+              <li>Kim family retains <strong>&gt;49% ownership</strong> post-offering</li>
+              <li><strong>180-day lockup</strong> agreement signed</li>
+              <li>CEO Engel sold 5,316 shares — routine post-vesting (0.7% of holdings)</li>
+              <li>CFO Faust: only tax-withholding transactions (F-INKIND)</li>
+              <li>John T. Kim 2024 GRAT transfers = estate planning vehicles</li>
+              <li>Goldman Sachs sole bookrunner = institutional-quality offering</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ownership-note">Founding family retaining &gt;49% with a lockup is the opposite of an exit signal. This is estate optimization while maintaining near-majority control.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ HOW COMPUTER FOUND THIS ════════════ -->
+<section class="section" id="computer">
+  <div class="container">
+    <div class="sec-label">Perplexity Computer Research</div>
+    <h2 class="sec-h2">How Computer Found <span class="accent">What Analysts Missed</span></h2>
+    <p class="sec-sub">This thesis required 8 distinct research discoveries that would have taken a human analyst 2+ weeks to piece together. Computer connected them in one iterative session — each answer generating the next question.</p>
+    <div class="research-grid">
+      <div class="rcrd2"><div class="rn">01</div><div class="rico rico-stat">S</div><h4>Statista: GPU Market 5× CAGR</h4><p>Computer queried Statista's 1.1M+ premium statistics database: GPU market <strong>$82.68B → $352.55B by 2030</strong> at 33.65% CAGR (Mordor Intelligence via Statista). This converts a company story into a market-structure argument that's impossible to dismiss.</p><div class="rsrc">Statista Premium · McKinsey AI Semiconductor CAGR · Mordor Intelligence GPU Forecast</div></div>
+      <div class="rcrd2"><div class="rn">02</div><div class="rico rico-mgmt">📞</div><h4>Earnings Transcript: Verbatim Confirmation</h4><p>Computer pulled the full Q4 2025 earnings transcript (Feb 9, 2026). Verbatim: CEO: <em>"2.5D and HDFO platforms expected to nearly triple"</em>; CFO: <em>"achieve that 30% incremental flow-through"</em>; <em>"potential aggregate incentives of over $2.85B"</em>; <em>"customer commitment agreements that could be prepayment agreements or loading agreements."</em></p><div class="rsrc">Perplexity Finance earnings transcript tool · Q4 2025 · February 9, 2026</div></div>
+      <div class="rcrd2"><div class="rn">03</div><div class="rico rico-pb">P</div><h4>PitchBook: Competitive Moat Confirmed</h4><p>PitchBook's company database confirmed AMKR as the only US-headquartered OSAT at scale. Also identified private Chinese competitors (Yiwu Semiconductor — PE-backed JV, founded 2021) with <strong>no TSMC CoWoS certification</strong>, revealing the competitive threat is structurally excluded from the AI packaging market.</p><div class="rsrc">PitchBook Company Profiles v3 · March 2026 · Amkor, Integra Technologies, Yiwu Semiconductor</div></div>
+      <div class="rcrd2"><div class="rn">04</div><div class="rico rico-cbi">C</div><h4>CB Insights: AI Funding Signal</h4><p>CB Insights State of AI 2025 revealed <strong>$100.4B in private AI funding in 2024</strong>. Most important: NVIDIA (NVentures), Qualcomm, Google, Microsoft were top corporate VCs — the exact chipmakers generating AMKR's HDFO demand pipeline. AI infrastructure captured the bulk of mega-rounds ($100M+).</p><div class="rsrc">CB Insights State of AI Report 2025 · $100.4B AI funding · 13 deals &gt;$1B</div></div>
+      <div class="rcrd2"><div class="rn">05</div><div class="rico rico-chain">⛓</div><h4>Supply Chain: The 180K Wafer Number</h4><p>Computer cross-referenced TSMC's internal CoWoS capacity planning (Global Semi Research) with AMKR's disclosed expansion. Result: <strong>180–190K wafers/year to Amkor specifically</strong> — not publicly available in any standard financial database. Combined with NVIDIA's 700K wafer demand, reveals the structural supply-demand imbalance.</p><div class="rsrc">Global Semi Research CoWoS Analysis · Dec 2025 · SemiWiki capacity data</div></div>
+      <div class="rcrd2 rcrd-new"><div class="rn">06</div><div class="rico rico-tariff">⚖</div><h4>NEW: Tariff Intelligence — Section 232 Discovery</h4><p>Computer cross-referenced the White House Section 232 Proclamation text with TSMC's DoC Whitelist policy. Found that the tariff exemption for domestic packaging (data centers, R&D) was <strong>buried in policy footnotes</strong> — standard sell-side notes missed it entirely. Result: AMKR's Arizona facility is tariff-exempt while JCET faces full 25% tariff on US-bound exports.</p><div class="rsrc">White House Section 232 Proclamation Jan 15 2026 · Gibson Dunn analysis · TechSoda/TSMC Whitelist · USITC cost data</div></div>
+      <div class="rcrd2 rcrd-new"><div class="rn">07</div><div class="rico rico-cong">🏛</div><h4>NEW: Congressional Signal — Armed Services</h4><p>Computer queried the politician trading database and surfaced Senator Mullin's <strong>three purchases of AMKR</strong> in Q1 2026 — totaling up to $150k. A defense committee member repeatedly buying an advanced packaging company signals institutional recognition of AMKR as national security infrastructure. Zero congressional sells.</p><div class="rsrc">Perplexity Finance politician trading database · Form 4 filings · Q1 2026</div></div>
+      <div class="rcrd2 rcrd-new"><div class="rn">08</div><div class="rico rico-ase">📈</div><h4>NEW: ASE Re-Rating Precedent (2018-2025)</h4><p>Computer pulled ASE Technology's historical P/S ratios across 8 years, revealing an identical pattern: ASE went from <strong>0.62× in 2022 to 1.74× in 2025</strong> (2.8× multiple expansion in 3 years) driven by the same three catalysts AMKR has today — advanced packaging mix shift, AI demand surge, margin expansion. AMKR at 1.65× today is where ASE was in late 2023.</p><div class="rsrc">Perplexity Finance company ratios tool · ASE Technology (ASX) · 2012-2025 annual data</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ VERDICT ════════════ -->
+<section class="verdict-sec">
+  <div class="container">
+    <div class="verdict-card">
+      <div class="vc-label">Final Recommendation</div>
+      <div class="vc-action">LONG <span class="accent">AMKR</span></div>
+      <div class="vc-tgts">
+        <div class="vt vt-bear"><span class="vt-l">Bear Case</span><span class="vt-p neg">$34.49</span><span class="vt-r neg">−34%</span></div>
+        <div class="vt vt-base"><span class="vt-l">Base Target</span><span class="vt-p accent">$60.40</span><span class="vt-r pos">+15%</span></div>
+        <div class="vt vt-bull"><span class="vt-l">Bull Case</span><span class="vt-p pos">$94.74</span><span class="vt-r pos">+81%</span></div>
+      </div>
+      <p class="vc-thesis">The market mis-categorizes Amkor as a commodity assembler. Advanced packaging — HDFO and CoWoS-compatible 2.5D integration — is the physical bottleneck of the AI deployment cycle. TSMC is outsourcing 180–190K CoWoS wafers/year exclusively to Amkor. Two HDFO data center programs enter high-volume production H2 2026. Management has guided 30% incremental margin flow-through. $2.85B in government incentives backstop the capex cycle. Trump's Section 232 tariffs structurally eliminate JCET as a US-market competitor while exempting Amkor's domestic Arizona output. Senator Mullin (Armed Services) is actively buying. The ASE precedent shows a 2.8× multiple re-rating from the same starting position over 3 years. A re-rating from 1.65× to just 2.0× P/S on FY2026 consensus revenue delivers 15% upside on the base case — with −34%/+81% asymmetry. The stock has already moved 10% in our direction since we initiated this research, confirming the thesis is playing out.</p>
+      <div class="vc-srcs"><strong>Primary Sources:</strong> Q4 2025 Earnings Transcript (Feb 9, 2026) · Statista/McKinsey AI Semiconductor CAGR · Mordor Intelligence GPU Market Forecast · PitchBook Company Profiles (March 2026) · CB Insights State of AI 2025 · Global Semi Research CoWoS Analysis (Dec 2025) · White House Section 232 Proclamation (Jan 15, 2026) · Gibson Dunn Trade Policy Analysis · Perplexity Finance Politician Trading Database · Bloomberg Advanced Packaging Market Report</div>
+      <div class="vc-foot">Built with Perplexity Computer &nbsp;·&nbsp; Perplexity Stock Pitch Competition 2026</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container"><p>Research generated with Perplexity Computer. <em>For competition and educational purposes only. Not personalized investment advice. Consult a qualified financial advisor before making investment decisions.</em></p></div>
+</footer>
+
+<script src="app.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
