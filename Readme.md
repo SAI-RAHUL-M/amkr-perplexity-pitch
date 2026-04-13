@@ -33,7 +33,7 @@ The pitch is delivered as a fully interactive, single-page application with a dy
 ## 👨‍💻 Author
 **Sai Rahul Meda**
 
-M.S. Applied Machine Learning, University of Maryland, College Park
+ - M.S. Applied Machine Learning, University of Maryland, College Park
 
 *This project bridges the gap between technical AI orchestration and fundamental financial modeling.*
 
