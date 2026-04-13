@@ -31,8 +31,10 @@ The pitch is delivered as a fully interactive, single-page application with a dy
 * **Quantitative Modeling:** Python 3
 
 ## 👨‍💻 Author
-**Sai Rahul Meda** 
+**Sai Rahul Meda**
+
 M.S. Applied Machine Learning, University of Maryland, College Park
+
 *This project bridges the gap between technical AI orchestration and fundamental financial modeling.*
 
 ---
