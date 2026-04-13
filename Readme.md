@@ -13,4 +13,4 @@ This project was built for the week-long Perplexity Stock Pitch Competition (Mar
 * `model.py`: The quantitative engine backing the pitch, calculating FY2026E segment revenue, ASE re-rating precedents, and government incentive offsets.
 
 ## Author
-* **Sai Rahul Meda** * **Background:** MS Applied Machine Learning, University of Maryland, College Park
+* **Sai Rahul Meda** **Background:** MS Applied Machine Learning, University of Maryland, College Park
